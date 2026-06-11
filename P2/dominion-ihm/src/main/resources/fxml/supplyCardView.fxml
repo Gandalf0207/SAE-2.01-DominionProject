@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<?import fr.umontpellier.iut.dominionfx.views.ShowInfosCardView?>
+
+
+<fx:root type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/" stylesheets="@../css/style.css">
+    <VBox>
+        <HBox id="boxTitleShop">
+            <Label fx:id="shopLabel" styleClass="titleColor, paddingX10" text="Shop"/>
+
+            <ImageView fitWidth="40" preserveRatio="true">
+                <image>
+                    <Image url="@../images/coin.png"/>
+                </image>
+            </ImageView>
+
+        </HBox>
+        <HBox>
+            <VBox>
+                <Label fx:id="treasuresCardLabel" styleClass="titleCardsBoxInShop" text="Treasures Cards"/>
+                <TilePane fx:id="treasureCard" styleClass="typeCardBox"/>
+            </VBox>
+
+            <VBox>
+                <Label fx:id="victoryCardLabel" styleClass="titleCardsBoxInShop" text="Victory Cards"/>
+                <TilePane fx:id="victoryCard" styleClass="typeCardBox"/>
+            </VBox>
+
+        </HBox>
+
+        <VBox>
+            <Label fx:id="kingdomCardLabel" styleClass="titleCardsBoxInShop" text="Kingdom Cards"/>
+            <TilePane fx:id="kingdomCard" styleClass="typeCardBox"/>
+        </VBox>
+    </VBox>
+
+    <ShowInfosCardView fx:id="showInfosCardView"/>
+</fx:root>

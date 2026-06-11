@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+
+<fx:root type="javafx.scene.layout.HBox" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/" stylesheets="@../css/style.css">
+    <Button fx:id="yesBtn" styleClass="imageSetup" text="Oui"/>
+    <Button fx:id="noBtn" styleClass="imageSetup" text="Non"/>
+</fx:root>

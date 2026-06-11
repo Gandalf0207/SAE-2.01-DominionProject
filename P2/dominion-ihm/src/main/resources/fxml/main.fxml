@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import fr.umontpellier.iut.dominionfx.views.CurrentPlayerView?>
+<?import fr.umontpellier.iut.dominionfx.views.OtherPlayersView?>
+<?import fr.umontpellier.iut.dominionfx.views.SupplyCardView?>
+<?import fr.umontpellier.iut.dominionfx.views.ScoresView?>
+
+<fx:root type="javafx.scene.layout.HBox" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/"
+         stylesheets="@../css/style.css">
+    <StackPane styleClass="expensionX, expensionY" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS">
+        <HBox>
+            <VBox fx:id="leftPane" id="leftPane" styleClass="imageSetup">
+
+                <OtherPlayersView fx:id="otherPlayerPane"/>
+
+                <HBox id="contenerSkipInstruc" styleClass="center">
+                    <Label fx:id="instruction" id="instruction"/>
+                    <Region HBox.hgrow="ALWAYS"/>
+                    <Button fx:id="skip" id="skip" styleClass="imageSetup, textPirate, sizeText18" text="Skip"/>
+                </HBox>
+
+                <CurrentPlayerView fx:id="currentPlayerPane" styleClass="center"/>
+            </VBox>
+
+            <SupplyCardView fx:id="supplyCardPane" id="supplyCardView" styleClass="imageSetup, expensionX, expensionY" HBox.hgrow="ALWAYS"/>
+        </HBox>
+
+        <VBox alignment="CENTER" StackPane.alignment="CENTER" maxWidth="-1" maxHeight="-1" mouseTransparent="false" pickOnBounds="false">
+            <ScoresView fx:id="scoresView" id="scoresView"/>
+        </VBox>
+
+    </StackPane>
+
+</fx:root>

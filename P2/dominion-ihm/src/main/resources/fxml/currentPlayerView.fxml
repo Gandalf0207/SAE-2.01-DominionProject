@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import fr.umontpellier.iut.dominionfx.views.YesNoView?>
+
+<fx:root type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/" stylesheets="@../css/style.css">
+  <VBox fx:id="contentZone" id="contentZone" styleClass="imageSetup, center">
+    <Label fx:id="playerName" id="playerName" styleClass="textPirate, sizeText40"/>
+    <HBox>
+      <VBox id="infosPlayer" HBox.hgrow="ALWAYS">
+        <Label fx:id="moneyLabel" styleClass="textPirate, sizeText18"/>
+        <Label fx:id="drawLabel" styleClass="textPirate, sizeText18"/>
+        <Label fx:id="discardLabel" styleClass="textPirate, sizeText18"/>
+        <Label fx:id="actionsLabel" styleClass="textPirate, sizeText18"/>
+        <Label fx:id="buysLabel" styleClass="textPirate, sizeText18"/>
+        <Label fx:id="pirateShipLabel" styleClass="textPirate, sizeText18"/>
+        <Label fx:id="nativeVillageInfosLabel" styleClass="textPirate, sizeText18"/>
+        <Label fx:id="islandMatInfosLabel" styleClass="textPirate, sizeText18"/>
+
+        <Button fx:id="playTreasuresBtn" id="playTreasuresBtn" styleClass="imageSetup, textPirate, sizeText18" text="Play Treasures"/>
+        <YesNoView fx:id="yesNoView" id="yesNoView"/>
+      </VBox>
+
+      <VBox id="boxPaneCardPlayer" HBox.hgrow="ALWAYS" styleClass="expensionX" minWidth="-1" maxWidth="-1">
+
+        <Label text="In Play" styleClass="textPirate, sizeText18"/>
+        <HBox fx:id="inPlayPane" id="inPlayPane"/>
+
+        <Label  text="Hand" styleClass="textPirate, sizeText18"/>
+        <HBox fx:id="handPane" id="handPane"/>
+
+        <HBox id="contenerIslandMatAndNativeVillageBox">
+
+          <VBox HBox.hgrow="ALWAYS" styleClass="expensionX">
+            <Label text="Island Mat" styleClass="textPirate, sizeText18"/>
+            <HBox fx:id="islandMatPane" id="islandMatPane"/>
+          </VBox>
+
+          <VBox HBox.hgrow="ALWAYS" styleClass="expensionX">
+            <Label text="Native Village" styleClass="textPirate, sizeText18"/>
+            <HBox fx:id="nativeVillageMatPane" id="nativeVillageMatPane"/>
+          </VBox>
+
+        </HBox>
+
+      </VBox>
+    </HBox>
+    <VBox styleClass="paddingY10">
+      <Label text="Temporary Cards" styleClass="textPirate, sizeText18"/>
+      <HBox fx:id="temporaryCardsPane" id="temporaryCardsPane" styleClass="center"/>
+    </VBox>
+  </VBox>
+</fx:root>

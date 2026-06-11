@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<fx:root type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/" stylesheets="@../css/style.css">
+    <Label fx:id="phraseVictoire" styleClass="textPirate, sizeText40, titleColor, paddingX10" />
+    <VBox>
+        <HBox styleClass="center, spacing10">
+            <Label text="Scores" styleClass="textPirate, sizeText30"/>
+
+            <ImageView fitWidth="40" preserveRatio="true">
+                <image>
+                    <Image url="@../images/vp.png"/>
+                </image>
+            </ImageView>
+
+        </HBox>
+
+        <HBox fx:id="contenerNodeResult" styleClass="center, spacing10"/>
+
+    </VBox>
+</fx:root>

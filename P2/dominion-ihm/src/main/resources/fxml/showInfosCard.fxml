@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+
+<fx:root type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/" stylesheets="@../css/style.css">
+
+    <Label fx:id="titreInfos" styleClass="titleColor, paddingX10" text="Infos Cards"></Label>
+
+    <HBox>
+
+        <VBox id="contenerInfosCardText">
+            <Label fx:id="cardNameLabel" text="Nom de la carte : ..."/>
+            <Label fx:id="cardCostLabel" text="Cout de la carte : ... piece(s)"/>
+            <Label fx:id="cardTypeLabel" text="Type de la carte : ..."/>
+            <Label fx:id="cardStockLabel" text="Il reste ... carte(s)"/>
+        </VBox>
+
+        <Region HBox.hgrow="ALWAYS"/>  <!-- prend tout l'espace au milieu pour les plaquer sur les bords -->
+
+        <VBox fx:id="cardPreviewContainer" HBox.hgrow="NEVER"/>
+
+
+    </HBox>
+
+</fx:root>

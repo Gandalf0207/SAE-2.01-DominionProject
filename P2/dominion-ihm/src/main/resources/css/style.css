@@ -1,0 +1,241 @@
+/* HBox, VBox {
+    -fx-border-color: red;
+    -fx-border-width: 4px;
+    -fx-border-style: solid;
+} */
+
+/*
+    Font f = Font.loadFont(getClass().getClassLoader().getResourceAsStream("fonts/PiecesOfEight.ttf"), 30);
+    System.out.println(f.getFamily());
+*/
+@font-face {
+    font-family: '...';  /* nom sert à rien car prend le nom du fichier ressource*/
+    src: url('../fonts/PiecesOfEight.ttf');
+}
+
+/* choose player view */
+#choosePlayersView {
+    -fx-background-image: url('../images/parchment.jpg');
+}
+
+#startBtn {
+    -fx-background-image: url('../images/parcheminBrulee.png');
+}
+
+
+/* main */
+
+#instruction{
+    -fx-font-family: 'Pieces of Eight';
+    -fx-font-size: 30;
+}
+
+#leftPane {
+    -fx-background-image: url('../images/bg.jpg');
+}
+
+#skip {
+    -fx-background-image: url('../images/parcheminBrulee.png');
+    -fx-border-width: 0;
+    -fx-padding: 10 20;
+}
+
+#otherPlayerPane{
+    -fx-padding: 0 10;
+    -fx-background-color: rgba(235, 235, 235, 0.623);
+}
+
+#contenerSkipInstruc {
+    -fx-opacity: 0.8;
+    -fx-background-image: url('../images/parchment.jpg');
+    -fx-padding:0 10;
+}
+
+/* supplyCardView */
+
+#boxTitleShop {
+    -fx-alignment: center-left;
+    -fx-spacing:10.0;
+}
+
+.titleCardsBoxInShop {
+    -fx-letter-spacing: 1px;
+    -fx-padding: 10 0 5 10;
+}
+
+#supplyCardView {
+    -fx-background-image: url('../images/parchment.jpg');
+
+}
+
+/* showInfosCardView */
+
+#contenerInfosCardText {
+    -fx-padding:0 10;
+}
+
+/* currentPlayerView */
+
+#contentZone {
+    -fx-opacity: 0.8;
+    -fx-background-image: url('../images/parchment.jpg');
+    -fx-padding: 0 10;
+}
+
+#playerName {
+    -fx-padding: 0 15;
+}
+
+#infosPlayer {
+    -fx-max-width: 175;
+}
+
+#inPlayPane, #handPane {
+    -fx-alignment: center-left;
+    -fx-min-height: 170;
+    -fx-spacing:-10;
+    -fx-background-color: rgba(255, 255, 255, 0.781);
+    -fx-background-radius:5;
+    -fx-padding:0 5;
+
+}
+
+#boxPaneCardPlayer {
+    -fx-alignment:center-left;
+}
+
+#playTreasuresBtn {
+    -fx-background-image: url('../images/parcheminBrulee.png');
+    -fx-padding: 10 25;
+}
+
+#islandMatPane, #nativeVillageMatPane {
+    -fx-alignment: center-left;
+    -fx-min-height: 90;
+    -fx-spacing:-20;
+    -fx-background-color: rgba(255, 255, 255, 0.781);
+    -fx-background-radius:5;
+    -fx-padding:5;
+}
+
+#contenerIslandMatAndNativeVillageBox {
+    -fx-spacing:5;
+}
+
+#temporaryCardsPane {
+    -fx-padding: 10 10;
+    -fx-min-height:150;
+    -fx-background-color: rgba(255, 255, 255, 0.781);
+    -fx-background-radius:5;
+    -fx-padding:5;
+}
+
+/* yesnoview */
+#yesBtn, #noBtn {
+    -fx-background-image: url('../images/carte.png');
+}
+
+#yesNoView{
+    -fx-padding: 10 5;
+    -fx-spacing:10;
+}
+
+/* score view */
+#scoresView {
+    -fx-background-color: rgba(236, 236, 236, 0.945);
+    -fx-border-color: rgb(0, 0, 0);
+    -fx-border-width: 4px;
+    -fx-border-style: solid;
+    -fx-padding: 40;
+}
+
+
+/* otherplayerview */
+
+#contenerInfosOtherPlayer {
+    -fx-spacing:10;
+}
+
+#infoDrawOtherPlayer {
+    -fx-background-image: url('../images/draw.png');
+    -fx-min-width:35;
+    -fx-min-height:50;
+}
+
+#infoDiscardOtherPlayer {
+    -fx-background-image: url('../images/discard.png');
+    -fx-min-width:50;
+    -fx-min-height:50;
+}
+
+#infosHandOtherPlayer {
+    -fx-background-image: url('../images/hand.png');
+    -fx-min-width:75;
+    -fx-min-height:50;
+}
+
+/* class (multiples nodes */
+
+.imageSetup {
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 100% 100%;
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+}
+
+.expensionX {
+    -fx-max-width: "Infinity";
+}
+
+.expensionY {
+    -fx-max-height: "Infinity";
+}
+
+.typeCardBox {
+    -fx-padding: 0 10;
+    -fx-hgap: 10.0;
+    -fx-vgap: 10.0;
+}
+
+.center {
+    -fx-alignment: center;
+}
+
+.titleColor {
+    -fx-font-weight: bold;
+    -fx-text-fill: #f1c40f;
+    -fx-letter-spacing: 2px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.9), 4, 0, 2, 2);
+}
+
+.textPirate {
+    -fx-font-family: 'Pieces of Eight';
+}
+
+.sizeText18 {
+    -fx-font-size: 18;
+}
+
+.sizeText30 {
+    -fx-font-size: 30;
+}
+
+.sizeText40 {
+    -fx-font-size: 40;
+}
+
+.paddingX10 {
+    -fx-padding:0 10;
+}
+
+.paddingY10 {
+    -fx-padding:10 0;
+}
+
+.spacing10 {
+    -fx-spacing:10;
+
+}
+

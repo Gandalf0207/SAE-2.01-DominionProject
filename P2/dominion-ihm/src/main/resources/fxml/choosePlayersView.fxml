@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<VBox xmlns="http://javafx.com/javafx/"
+    xmlns:fx="http://javafx.com/fxml/"
+    stylesheets="@../css/style.css"
+    id="choosePlayersView" styleClass="imageSetup, spacing10, center">
+
+    <ImageView fitWidth="250" preserveRatio="true">
+        <image>
+            <Image url="@../images/title.png"/>
+        </image>
+    </ImageView>
+
+    <HBox styleClass="center, spacing10">
+        <Label text="Nombre de joueurs :" styleClass="textPirate, sizeText18"/>
+        <Spinner fx:id="nbPlayersSpinner" min="2" max="6" initialValue="2" editable="false"/>
+    </HBox>
+
+    <VBox fx:id="playersNamesContainer" styleClass="center, spacing10"/>
+
+    <Button fx:id="startBtn" id="startBtn" text="Démarrer" styleClass="textPirate, sizeText30, imageSetup" onAction="#setPlayersNamesList"/>
+
+</VBox>
